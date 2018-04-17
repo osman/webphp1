@@ -5,6 +5,25 @@
 This project demonstrates how to package and run a simple PHP application using
 Docker.
 
+## Step1: Initial and pull Master Repo from Github
+cd /home/jimmycgz
+rm -rf webphp1
+mkdir webphp1
+cd webphp1
+git init
+git remote add origin https://github.com/jimmycgz/webphp1.git
+git pull origin master
+
+cd /home/jimmycgz/webphp1
+
+## Step2: Delete all existing images and containers, build a new image with php7.1 pakge(indicated in Dockerfile)
+docker image rm -f $(docker images -aq)
+docker rm -f $(docker ps -aq)
+docker build -t webphp1hello /home/jimmycgz/webphp1/
+docker run --name=docker-php-hello -d -it -p 80:80 webphp1hello
+
+
+
 ## Running
 
 First, you'll need to install Docker if you haven't done that already. You can
