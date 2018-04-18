@@ -2,6 +2,13 @@
 
 ## Overview
 
+Jmy Jenkins Instance on AWS:
+http://ec2-35-182-104-99.ca-central-1.compute.amazonaws.com:8080/
+
+Jmy container instance on GCP &AWS:
+http://35.185.13.195/
+http://ec2-35-182-104-99.ca-central-1.compute.amazonaws.com/
+
 This project demonstrates how to package and run a simple PHP application using
 Docker.
 
