@@ -11,9 +11,9 @@
     <? } else { ?>
       <form class="greetingForm" action="index.php" method="post">
         <label for="who">This is run from Docker 4th time <BR> <BR> </label>
-        <label for="who">Say hello to</label>
+        <label for="who">May I know your Name ? </label>
         <input type="text" name="who">
-        <input type="submit" name="greet" value="Say Hello">
+        <input type="submit" name="greet" value="Enter">
       </form>
     <? } ?>
   </body>
