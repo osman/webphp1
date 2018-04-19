@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 #Deploy to GCP Ubuntu via ssh
-# ssh -i "/home/ubuntu/Jmy_Key_GCP_Apr_2018.pem" jimmycgz@35.185.13.195
-# Can't connect via ssh in shell script file, try below way in Jenkins Build script section.
+# ssh -i "/home/ubuntu/Jmy_Key_GCP_Apr_2018.pem" jimmycgz@35.185.13.195 VM deleted in GCP
+# Can't connect via ssh in shell script file, tried below in Jenkins Build script section but doesn't work either.
 # ssh -i "/home/ubuntu/Jmy_Key_GCP_Apr_2018.pem" jimmycgz@35.185.13.195 < Deploy-Stage.sh
+
+ssh -i "/home/ubuntu/Jmy_Key_GCP_Apr_2018.pem" jimmycgz@35.227.39.237
 
 cd /home/jimmycgz 
 rm -rf webphp1
