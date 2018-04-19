@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Deploy to AWS Ubuntu
 
 cd /home/jimmycgz 
