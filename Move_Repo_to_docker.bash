@@ -3,7 +3,7 @@
 #Deploy to AWS Ubuntu
 
 cd /home/jimmycgz 
-sudo rm -rf webphp1
+rm -rf webphp1
 mkdir -p /home/jimmycgz/webphp1
 cd /home/jimmycgz/webphp1
 git init
@@ -21,7 +21,7 @@ docker run --name=docker-php-hello -d -it -p 80:80 webphp1hello
 ssh -i "Jmy_Key_GCP_Apr_2018.pem" jimmycgz@35.185.13.195
 
 cd /home/jimmycgz 
-sudo rm -rf webphp1
+rm -rf webphp1
 mkdir -p /home/jimmycgz/webphp1
 cd /home/jimmycgz/webphp1
 git init
